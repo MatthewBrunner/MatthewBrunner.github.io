@@ -1,0 +1,105 @@
+baseURL: "https://matthewbrunner.com/"
+title: Matthew Brunner
+languageCode: en-us
+paginatation.pagersize: 5
+theme: PaperMod
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+enableRobotsTXT: true
+
+caches:
+  images:
+    dir: :cacheDir/images
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: MatthewBrunner.com
+  description: "Matthew Brunner"
+  author: Matthew Brunner
+  images: ["<link or path of image for opengraph, twitter-cards>"]
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowRssButtonInSectionTermList: true
+  disableScrollToTop: false
+  comments: false
+  hideSummary: false
+
+  assets:
+    disableHLJS: true
+    disableFingerprinting: false
+    favicon: "favicon.ico"
+    favicon16x16: "/favicon-16x16.png"
+    favicon32x32: "/favicon-32x32.png"
+    apple_touch_icon: "<link / abs url>"
+    safari_pinned_tab: "<link / abs url>"
+
+  label:
+    text: "Home"
+      # icon: /apple-touch-icon.png
+      #iconHeight: 35
+
+  homeInfoParams:
+    #enabled: true # needs to be explicitly set
+    title: Matthew Brunner
+      #subtitle: "Easily bribed with food."
+      #imageUrl: "/avatar.jpg"
+      #imageWidth: 120
+      #imageHeight: 120
+      #imageTitle: Matthew Brunner
+    buttons:
+      - name: Posts
+        url: posts
+          #- name: About
+          #url: about
+
+  socialIcons:
+    #- name: email 
+    #  url: mailto:matthew@matthewbrunner.com
+    - name: github
+      url: "https://github.com/MatthewBrunner"
+    - name: rss
+      url: "/index.xml"
+  
+
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: true # hide on single page
+
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    minMatchCharLength: 3
+    keys: ["title", "summary", "content"]
+menu:
+  main:
+    - identifier: categories
+      name: categories
+      url: /categories/
+      weight: 10
+    - identifier: tags
+      name: tags
+      url: /tags/
+      weight: 20
+    - identifier: search
+      name: search
+      url: /search/
+      weight: 40
+
+pygmentsUseClasses: true
+markup:
+  highlight:
+  codeFences: true
+  guessSyntax: false
+  style: native
+
+
+
