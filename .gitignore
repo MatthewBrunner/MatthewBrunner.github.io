@@ -1,0 +1,14 @@
+# Hugo build output
+public/
+resources/_gen/
+
+# Hugo lock file
+hugo_build.lock
+
+# JavaScript dependencies (if using npm/yarn)
+node_modules/
+
+# Local environment variables and OS specific files
+.env
+.DS_Store
+Thumbs.db
