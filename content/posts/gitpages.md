@@ -1,5 +1,5 @@
 ---
-title: "Gitpages"
+title: "Git Pages and Other Updates"
 date: 2026-07-01T16:58:40-05:00
 draft: false
 tags:
